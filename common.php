@@ -170,14 +170,16 @@ function main($path)
         $adminloginpage = 'admin';
     } else {
         $adminloginpage = getConfig('adminloginpage');
-    }
+    } 
+    /* 
+      
     if (isset($_GET[$adminloginpage])) {
         if (isset($_GET['preview'])) {
             $url = $_SERVER['PHP_SELF'] . '?preview';
         } else {
             $url = path_format($_SERVER['PHP_SELF'] . '/');
         }
- /*       if (isset($_POST['password1'])) {
+      if (isset($_POST['password1'])) {
             $compareresult = compareadminsha1($_POST['password1'], $_POST['timestamp'], getConfig('admin'));
             if ($compareresult=='') {
                 return adminform('admin', adminpass2cookie('admin', getConfig('admin')), $url);
