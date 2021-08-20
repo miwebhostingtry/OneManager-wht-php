@@ -956,7 +956,7 @@ function time_format($ISO)
     return date('Y-m-d H:i:s',strtotime($ISO . " UTC"));
 }
 
-function adminform($name = '', $pass = '', $path = '')
+/*  function adminform($name = '', $pass = '', $path = '')
 {
     $html = '<html><head><title>' . getconstStr('AdminLogin') . '</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"></head>';
     if ($name=='admin'&&$pass!='') {
@@ -1004,6 +1004,8 @@ function adminform($name = '', $pass = '', $path = '')
     $html .= '</html>';
     return output($html, $statusCode);
 }
+
+*/
 
 function adminoperate($path)
 {
